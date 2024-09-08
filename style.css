@@ -1,0 +1,66 @@
+/*CSS COMMON*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    scroll-behavior: smooth;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*CSS COMMON*/
+body{
+    height: 5000px;
+}
+.scroll{
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    background: conic-gradient(blue , purple);
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.count{
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 40px;
+}
+nav{
+    width: 100%;
+    padding: 30px;
+    box-shadow: 3px 3px 30px rgba(85, 81, 81, 0.832);
+}
+nav.active{
+    position: fixed;
+    top: 0;
+    animation: animate 0.6s linear;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
